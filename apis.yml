@@ -1,23 +1,72 @@
 aid: auxilium-health
+
 name: Auxilium Health
-description: 'Auxilium Health is a company surfaced via the API Evangelist harvest backlog (source: secondary-market)
-  and added to the network as a stub for full-pipeline profiling.'
+
+image: https://static.wixstatic.com/media/410637_0a2011e0519745a2a2d88844ef9b6dd2%7Emv2.png/v1/fit/w_2500,h_1330,al_c/410637_0a2011e0519745a2a2d88844ef9b6dd2%7Emv2.png
+
+description: 'Auxilium Health provides a comprehensive suite of patient support programs and services to streamline access to medical treatments for physicians and patients. Based in Toronto, Canada, the company offers dedicated portal programs, product provision, data insight, and optiCare services, ensuring high-quality, safe, and efficient patient care across the healthcare ecosystem.'
+
 url: https://raw.githubusercontent.com/api-evangelist/auxilium-health/refs/heads/main/apis.yml
+
 x-type: company
+
 x-source: harvest:secondary-market
-x-tier: stub
-x-tier-reason: harvest
+
+x-tier: profiled
+x-tier-reason: enrichment pass 2026-09-26 (modular-v1; was harvest)
+
 specificationVersion: '0.20'
+
 created: '2026-09-26'
+
 modified: '2026-09-26'
+
 tags:
-- Company
-apis: []
+- Healthcare
+- PatientSupport
+- Toronto
+- Canada
+- Services
+
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+
 common:
+- type: LLMsTxt
+  url: llms/auxilium-health-llms.txt
+- type: MCPServer
+  url: mcp/auxilium-health-mcp.yml
+- type: Hosts
+  url: hosts/auxilium-health-hosts.yml
+- type: Vendors
+  url: vendors/auxilium-health-vendors.yml
+- type: DomainSecurity
+  url: security/auxilium-health-domain-security.yml
 - type: Website
-  url: https://www.nasdaqprivatemarket.com/
+  url: https://www.auxiliumhealth.ca
+- type: Documentation
+  url: https://www.auxiliumhealth.ca/about
+- type: Support
+  url: https://www.auxiliumhealth.ca/contact-us
+- type: PrivacyPolicy
+  url: https://www.auxiliumhealth.ca/privacy-policy
+
+apis: []
+
+x-coverage:
+  state: unreadable
+  reason: js-rendered-docs
+  detail: Docs are rendered via Wix platform, preventing machine‑readable extraction of an API contract.
+  evidence:
+    - url: https://www.auxiliumhealth.ca/about
+      status: 200
+  checked: 2026-09-26
+x-enrichment:
+  date: '2026-09-26'
+  status: enriched
+  artifacts_added: 8
+  pass: modular-v1
+  engine: identity=local,contract=local,surfaces=local,docs=local,regulatory=local

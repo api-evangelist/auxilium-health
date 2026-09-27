@@ -1,0 +1,18 @@
+generated: 2026-09-27
+method: probed
+source:
+  - url: https://www.auxiliumhealth.ca/privacy-policy
+    http_status: 200
+    fetched: 2026-09-27
+    quote: "We retain client personal information only as long as is reasonable to fulfil the purposes for which the information was collected or for legal or business purposes."
+    section: "How do we safeguard personal information?"
+    note: Retention period policy stating data is kept only as long as reasonably needed for purpose or legal reasons.
+signals:
+  data_retention:
+    evidence:
+      - source: https://www.auxiliumhealth.ca/privacy-policy
+        http_status: 200
+        fetched: 2026-09-27
+        quote: "We retain client personal information only as long is reasonable to fulfil the purposes for which the information was collected or for legal or business purposes."
+        section: "How do we safeguard personal information?"
+        note: Defines data retention timeframe.

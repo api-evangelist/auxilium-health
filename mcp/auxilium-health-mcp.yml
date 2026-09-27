@@ -1,0 +1,8 @@
+generated: 2026-09-27
+method: probed
+source: https://www.auxiliumhealth.ca/_api/mcp
+deployment:
+  mode: remote
+  endpoint: https://www.auxiliumhealth.ca/_api/mcp
+  auth: unknown
+  verified: probed

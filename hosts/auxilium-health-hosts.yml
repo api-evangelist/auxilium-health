@@ -1,0 +1,52 @@
+generated: '2026-09-26'
+method: derived
+source: the pre-flight dossier, apis.yml pointers, spec servers, well-known, vendors -- nothing fetched here
+generator: derive-hosts.py
+summary:
+  hosts: 3
+  own: 2
+  other_domain: 0
+  platform: 1
+  roles:
+  - api
+  - other
+  - website
+hosts:
+- host: api.auxiliumhealth.ca
+  found_by:
+  - contract-discovery
+  types: []
+  serves: []
+  registrable_domain: auxiliumhealth.ca
+  role: api
+  relation: own
+- host: dev.wix.com
+  found_by:
+  - docs-index
+  types: []
+  serves:
+  - docs
+  registrable_domain: wix.com
+  role: other
+  relation: platform
+- host: www.auxiliumhealth.ca
+  found_by:
+  - pointer
+  - probed
+  - docs-index
+  - contract-discovery
+  - well-known
+  - vendor-detect
+  types:
+  - Website
+  - Documentation
+  - Support
+  - PrivacyPolicy
+  serves:
+  - docs
+  - cdn
+  - hosting
+  vendor: fastly
+  registrable_domain: auxiliumhealth.ca
+  role: website
+  relation: own

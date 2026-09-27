@@ -1,0 +1,6 @@
+generated: '2026-09-26'
+method: probed
+generator: harvest-llms.py
+source: https://www.auxiliumhealth.ca/llms.txt
+bytes: 3368
+note: saved verbatim; the provider's own document
